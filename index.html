@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Caça-Palavras</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Lilita+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body><div id="app">
+<section id="menu">
+<div id="logo" aria-label="Caça-Palavras"></div>
+<div id="hero"><svg viewBox="0 0 5 5"><line x1=".5" y1=".5" x2="3.5" y2=".5" pathLength="1" stroke="#ffd23f"/><line x1="3.5" y1="1.5" x2="3.5" y2="4.5" pathLength="1" stroke="#ff7a90"/></svg><div id="hc"></div></div>
+<p class="sub">Arraste o dedo sobre as letras e ache todas as palavras escondidas, na horizontal, vertical ou diagonal.</p>
+<p><button class="btn" id="play">JOGAR</button></p>
+</section>
+<section id="setup" class="hide">
+<h2>Monte sua partida</h2>
+<div class="lbl">Dificuldade</div><div class="segs" id="df"></div>
+<div class="lbl">Elemento</div><div class="themes" id="th"></div>
+<p style="margin-top:22px"><button class="btn" id="go">COMEÇAR</button></p>
+<p><button class="btn alt" id="sb">Voltar</button></p>
+</section>
+<section id="game" class="hide">
+<div id="top"><button class="btn alt" id="bk"></button><span id="tt"></span><span id="tm">0:00</span><button class="btn alt" id="hb"></button><button class="btn alt" id="sd"></button></div>
+<div id="pg"><i></i></div><div id="paper"><div id="board"><svg id="ln" viewBox="0 0 8 8"><g id="dn"></g><line id="sl" visibility="hidden"/></svg><div id="cells"></div><div id="tst"></div></div></div>
+<ul id="wl"></ul>
+</section>
+</div>
+<div id="win" class="hide"><div class="p"><div id="stars"></div><h2 style="margin:6px 0">Mandou bem!</h2><p id="res" style="font-size:20px;margin:6px 0 16px"></p><button class="btn" id="nx">Jogar de novo</button><p><button class="btn alt" id="mn" style="color:var(--ink);background:var(--grid);margin-top:8px">Trocar tema</button></p></div></div>
+<script src="script.js"></script></body></html>
